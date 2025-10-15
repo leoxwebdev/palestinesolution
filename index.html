@@ -165,82 +165,82 @@
           </div>
         </nav>  
 
-        <section class="card stack" style="margin-top: 40px; padding-bottom: 40px;margin-bottom: 40px;">
+        <section class="card stack" style="margin-top: 40px; padding-bottom: 40px; margin-bottom: 40px;">
           <h2 class="section-title">
-            <b
-              >Complete Set of Videos Paralleling this White Paper Now Live on
-              YouTube</b
-            >
+            <b>Complete Set of Videos Paralleling this White Paper Now Live on YouTube</b>
           </h2>
-          <div class="video-grid">
-            <div class="video-card">
-              <div class="video-embed">
+          
+          <div class="video-player-section">
+            <!-- Featured Video Player -->
+            <div class="featured-video">
+              <div class="featured-video-embed">
                 <iframe
+                  id="featured-player"
                   src="https://www.youtube.com/embed/OfFd6VI05wg"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
               </div>
-              <div class="video-info">
-                <p class="video-title">Video 1: Prisoners of their Expertise</p>
-                <div class="video-meta">
-                  <span class="view-count">96,000 views in 14 months</span>
+              <div class="featured-video-info">
+                <p class="featured-video-title" id="featured-title">Video 1: Prisoners of their Expertise</p>
+                <div class="featured-video-meta">
+                  <span class="view-count" id="featured-views">96,000 views in 14 months</span>
                 </div>
               </div>
             </div>
-            <div class="video-card">
-              <div class="video-embed">
-                <iframe
-                  src="https://www.youtube.com/embed/6gec5C-4dC4"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-info">
-                <p class="video-title">
-                  Video 2: Not Two-States-Side-by-Side, but Two States Far
-                  Apart!
-                </p>
-                <div class="video-meta">
-                  <span class="view-count">71,000 views in 14 months</span>
+
+            <!-- Video Thumbnails -->
+            <div class="video-thumbnails">
+              <div class="video-thumb active" onclick="switchVideo('OfFd6VI05wg', 'Video 1: Prisoners of their Expertise', '96,000 views in 14 months', this)">
+                <div class="thumb-image">
+                  <img src="https://img.youtube.com/vi/OfFd6VI05wg/mqdefault.jpg" alt="Video 1 thumbnail">
+                </div>
+                <div class="thumb-info">
+                  <p class="thumb-title">Video 1: Prisoners of their Expertise</p>
+                  <div class="thumb-meta">
+                    <span class="view-count">96,000 views in 14 months</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="video-card">
-              <div class="video-embed">
-                <iframe
-                  src="https://www.youtube.com/embed/K6FHxgTTBKQ"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-info">
-                <p class="video-title">
-                  Video 3: If We Build New Palestine, They Will Come
-                </p>
-                <div class="video-meta">
-                  <span class="view-count">87,000 views in 14 months</span>
+              
+              <div class="video-thumb" onclick="switchVideo('6gec5C-4dC4', 'Video 2: Not Two-States-Side-by-Side, but Two States Far Apart!', '71,000 views in 14 months', this)">
+                <div class="thumb-image">
+                  <img src="https://img.youtube.com/vi/6gec5C-4dC4/mqdefault.jpg" alt="Video 2 thumbnail">
+                </div>
+                <div class="thumb-info">
+                  <p class="thumb-title">Video 2: Not Two-States-Side-by-Side, but Two States Far Apart!</p>
+                  <div class="thumb-meta">
+                    <span class="view-count">71,000 views in 14 months</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="video-card">
-              <div class="video-embed">
-                <iframe
-                  src="https://www.youtube.com/embed/Elh7YUTMaT4"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+              
+              <div class="video-thumb" onclick="switchVideo('K6FHxgTTBKQ', 'Video 3: If We Build New Palestine, They Will Come', '87,000 views in 14 months', this)">
+                <div class="thumb-image">
+                  <img src="https://img.youtube.com/vi/K6FHxgTTBKQ/mqdefault.jpg" alt="Video 3 thumbnail">
+                </div>
+                <div class="thumb-info">
+                  <p class="thumb-title">Video 3: If We Build New Palestine, They Will Come</p>
+                  <div class="thumb-meta">
+                    <span class="view-count">87,000 views in 14 months</span>
+                  </div>
+                </div>
               </div>
-              <div class="video-info">
-                <p class="video-title">
-                  Video 4: Recapitulation, Objections, And Rebuttals
-                </p>
-                <div class="video-meta">
-                  <span class="view-count">84,000 views in 14 months</span>
+              
+              <div class="video-thumb" onclick="switchVideo('Elh7YUTMaT4', 'Video 4: Recapitulation, Objections, And Rebuttals', '84,000 views in 14 months', this)">
+                <div class="thumb-image">
+                  <img src="https://img.youtube.com/vi/Elh7YUTMaT4/mqdefault.jpg" alt="Video 4 thumbnail">
+                </div>
+                <div class="thumb-info">
+                  <p class="thumb-title">Video 4: Recapitulation, Objections, And Rebuttals</p>
+                  <div class="thumb-meta">
+                    <span class="view-count">84,000 views in 14 months</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div style="margin-top: 20px; text-align: center">
             <a
               href="./ar.html"
@@ -252,6 +252,21 @@
             </a>
           </div>
         </section>
+
+        <script>
+          function switchVideo(videoId, title, views, thumbElement) {
+            // Update featured player with autoplay parameter
+            document.getElementById('featured-player').src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+            document.getElementById('featured-title').textContent = title;
+            document.getElementById('featured-views').textContent = views;
+            
+            // Update active state
+            document.querySelectorAll('.video-thumb').forEach(thumb => {
+              thumb.classList.remove('active');
+            });
+            thumbElement.classList.add('active');
+          }
+        </script>
 
       
         <!-- <section class="card stack" style="margin-top: 24px">
