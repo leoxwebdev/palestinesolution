@@ -33,6 +33,7 @@ body {
 .hero {
   padding: 40px 0 32px;
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .hero-content {
@@ -50,6 +51,7 @@ body {
   color: #2a2a2a !important;
   text-shadow: none !important;
   position: relative;
+  text-align: center;
 }
 
 .page-title::after {
@@ -442,6 +444,142 @@ body {
   .section-title {
     padding: 0 12px;
   }
+}
+
+/* Elements specific to Arabic page content that are not in shared CSS */
+.section-divider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  border: none;
+  margin: 60px 0;
+  opacity: 0.5;
+}
+
+.pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 28px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-600));
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: all 200ms ease;
+  box-shadow: 0 10px 30px rgba(56, 179, 129, 0.35);
+  margin: 24px 0;
+}
+
+.pdf-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(56, 179, 129, 0.45);
+  filter: brightness(1.05);
+}
+
+.cta-section {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.cta-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  background: linear-gradient(135deg, #5a6371, #3a4351);
+  border: none;
+  /* border-radius: 14px; */
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: all 200ms ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  filter: brightness(1.08);
+}
+
+.alert-box {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 193, 7, 0.18),
+    rgba(255, 152, 0, 0.1)
+  );
+  border-right: 6px solid #ffa726;
+  padding: 24px;
+  /* border-radius: 16px; */
+  margin: 40px 0;
+  box-shadow: 0 8px 24px rgba(255, 152, 0, 0.15);
+}
+
+.alert-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin: 0 0 16px 0;
+  color: #f57c00;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.quote-highlight {
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 36px 24px;
+  margin: 48px 0;
+  background: linear-gradient(
+    135deg,
+    rgba(56, 179, 129, 0.2),
+    rgba(56, 179, 129, 0.08)
+  );
+  border-radius: 20px;
+  border: 3px solid var(--accent);
+  color: var(--accent);
+  line-height: 1.6;
+  box-shadow: 0 12px 40px rgba(56, 179, 129, 0.2);
+}
+
+.final-card {
+  background: linear-gradient(
+    135deg,
+    rgba(56, 179, 129, 0.15),
+    rgba(56, 179, 129, 0.08)
+  );
+  border: 3px solid var(--accent);
+  border-radius: 20px;
+  padding: 36px;
+  text-align: center;
+  margin: 48px 0;
+  box-shadow: 0 12px 48px rgba(56, 179, 129, 0.2);
+}
+
+.final-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.final-author {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 0;
 }
 
 @media (min-width: 768px) {

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="Shortcut Icon" href="./palestinesolution.png" type="image/x-icon" />
     <title>الكتابُ الأبيض: حلُّ الخروج المشترك من الأزمة الفلسطينيَّة</title>
     <meta
       name="description"
@@ -11,482 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./styles.css?v=5" />
     <link rel="stylesheet" href="./ar-styles.css?v=1" />
-    <style>
-      /* Enhanced Arabic typography and layout */
-      body {
-        font-feature-settings: "rlig" 1, "calt" 1, "liga" 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-
-      /* Hero Section */
-      .hero {
-        text-align: center;
-        padding: 60px 20px;
-        background: linear-gradient(
-          180deg,
-          rgba(56, 179, 129, 0.08),
-          transparent
-        );
-        border-radius: 20px;
-        margin-bottom: 40px;
-      }
-
-      .language-selector {
-        display: inline-block;
-        margin-bottom: 24px;
-      }
-
-      .lang-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 10px 20px;
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        text-decoration: none;
-        color: var(--text);
-        font-size: 0.95rem;
-        transition: all 150ms ease;
-      }
-
-      .lang-link:hover {
-        border-color: var(--accent);
-        background: rgba(56, 179, 129, 0.1);
-        transform: translateY(-2px);
-      }
-
-      .hero-title {
-        font-size: clamp(2.2rem, 5vw, 4rem);
-        line-height: 1.25;
-        font-weight: 900;
-        margin: 24px 0;
-        background: linear-gradient(135deg, var(--accent), var(--accent-600));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-shadow: 0 4px 20px rgba(56, 179, 129, 0.2);
-      }
-
-      /* Author Info */
-      .author-card {
-        background: linear-gradient(
-          135deg,
-          rgba(56, 179, 129, 0.15),
-          rgba(56, 179, 129, 0.05)
-        );
-        border-right: 5px solid var(--accent);
-        padding: 28px;
-        /* border-radius: 16px; */
-        margin: 32px 0;
-        line-height: 1.9;
-        font-size: 1.3rem;
-      }
-
-      .author-card em {
-        font-style: italic;
-        color: var(--muted);
-        font-size: 1.2rem;
-      }
-
-      .author-card a {
-        color: var(--accent);
-        font-weight: 700;
-        text-decoration: none;
-        border-bottom: 2px solid var(--accent);
-        transition: all 120ms ease;
-      }
-
-      .author-card a:hover {
-        background: rgba(56, 179, 129, 0.1);
-        padding: 2px 6px;
-        border-radius: 4px;
-      }
-
-      /* PDF Download Button */
-      .pdf-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        padding: 20px 32px;
-        background: linear-gradient(135deg, var(--accent), var(--accent-600));
-        border: none;
-        border-radius: 14px;
-        color: white;
-        font-weight: 800;
-        font-size: 1.15rem;
-        text-decoration: none;
-        transition: all 200ms ease;
-        box-shadow: 0 10px 30px rgba(56, 179, 129, 0.35);
-        margin: 32px 0;
-      }
-
-      .pdf-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 15px 40px rgba(56, 179, 129, 0.45);
-        filter: brightness(1.08);
-      }
-
-      /* Section Divider */
-      .section-divider {
-        height: 3px;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          var(--accent),
-          transparent
-        );
-        border: none;
-        margin: 60px 0;
-        opacity: 0.5;
-      }
-
-      /* Video Section */
-      .videos-section {
-        margin: 60px 0;
-      }
-
-      .section-heading {
-        font-size: clamp(2rem, 4vw, 3rem);
-        font-weight: 900;
-        margin-bottom: 40px;
-        text-align: center;
-        color: var(--text);
-      }
-
-      .videos-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 32px;
-        margin: 40px 0;
-      }
-
-      @media (min-width: 768px) {
-        .videos-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-
-      .video-item {
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.08),
-          rgba(255, 255, 255, 0.03)
-        );
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        overflow: hidden;
-        transition: all 250ms ease;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-      }
-
-      .video-item:hover {
-        border-color: var(--accent);
-        transform: translateY(-6px);
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
-      }
-
-      .video-embed-wrapper {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%;
-        background: #000;
-      }
-
-      .video-embed-wrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-
-      .video-info {
-        padding: 20px;
-      }
-
-      .video-heading {
-        font-size: 1.2rem;
-        font-weight: 800;
-        margin-bottom: 10px;
-        line-height: 1.4;
-        color: var(--text);
-      }
-
-      .video-stats {
-        font-size: 0.92rem;
-        color: var(--muted);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-
-      /* Articles Section */
-      .articles-section {
-        margin: 60px 0;
-      }
-
-      .articles-intro {
-        color: var(--muted);
-        font-size: 1.1rem;
-        text-align: center;
-        margin-bottom: 32px;
-      }
-
-      .article-card {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        padding: 24px 28px;
-        background: var(--panel);
-        border: 2px solid var(--border);
-        border-radius: 12px;
-        text-decoration: none;
-        color: var(--text);
-        font-weight: 700;
-        font-size: 1.15rem;
-        transition: all 200ms ease;
-        margin: 16px 0;
-      }
-
-      .article-card:hover {
-        border-color: var(--accent);
-        background: rgba(56, 179, 129, 0.08);
-        transform: translateX(-6px);
-        box-shadow: 0 8px 24px rgba(56, 179, 129, 0.2);
-      }
-
-      .article-icon {
-        font-size: 2rem;
-        flex-shrink: 0;
-      }
-
-      /* Parts Navigation */
-      .parts-nav {
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.06),
-          rgba(255, 255, 255, 0.02)
-        );
-        border: 1px solid var(--border);
-        border-radius: 20px;
-        padding: 40px;
-        margin: 60px 0;
-      }
-
-      .parts-nav h3 {
-        font-size: 1.8rem;
-        font-weight: 800;
-        text-align: center;
-        margin: 0 0 32px 0;
-        color: var(--accent);
-      }
-
-      .parts-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 16px;
-      }
-
-      .part-link {
-        padding: 24px 16px;
-        text-align: center;
-        background: var(--panel);
-        border: 3px solid var(--border);
-        border-radius: 14px;
-        text-decoration: none;
-        color: var(--text);
-        font-weight: 900;
-        font-size: 1.3rem;
-        transition: all 200ms ease;
-      }
-
-      .part-link:hover {
-        border-color: var(--accent);
-        background: rgba(56, 179, 129, 0.12);
-        transform: translateY(-4px) scale(1.02);
-        box-shadow: 0 12px 32px rgba(56, 179, 129, 0.25);
-      }
-
-      /* Content Article */
-      .content-article {
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.06),
-          rgba(255, 255, 255, 0.02)
-        );
-        border: 1px solid var(--border);
-        border-radius: 20px;
-        padding: 48px;
-        margin: 60px 0;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-      }
-
-      @media (max-width: 767px) {
-        .content-article {
-          padding: 28px 20px;
-        }
-      }
-
-      .article-title {
-        font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-        font-weight: 900;
-        line-height: 1.35;
-        margin-bottom: 24px;
-        color: var(--text);
-      }
-
-      .article-meta {
-        color: var(--muted);
-        font-size: 1rem;
-        margin-bottom: 32px;
-        padding-bottom: 24px;
-        border-bottom: 2px solid var(--border);
-      }
-
-      .article-meta a {
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 600;
-        border-bottom: 1px dashed var(--accent);
-      }
-
-      .article-meta a:hover {
-        border-bottom-style: solid;
-      }
-
-      /* Prose Content */
-      .prose {
-        line-height: 2.1;
-        font-size: 1.08rem;
-      }
-
-      .prose p {
-        margin: 1.8em 0;
-        text-align: justify;
-        hyphens: auto;
-      }
-
-      .prose strong {
-        color: var(--accent);
-        font-weight: 900;
-        font-size: 1.12em;
-      }
-
-      /* Alert Box */
-      .alert-box {
-        background: linear-gradient(
-          135deg,
-          rgba(255, 193, 7, 0.18),
-          rgba(255, 152, 0, 0.1)
-        );
-        border-right: 6px solid #ffa726;
-        padding: 32px;
-        border-radius: 16px;
-        margin: 48px 0;
-        box-shadow: 0 8px 24px rgba(255, 152, 0, 0.15);
-      }
-
-      .alert-title {
-        font-size: 1.8rem;
-        font-weight: 900;
-        margin: 0 0 20px 0;
-        color: #f57c00;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-
-      /* Quote Highlight */
-      .quote-highlight {
-        font-size: 1.6rem;
-        font-weight: 900;
-        text-align: center;
-        padding: 48px 32px;
-        margin: 60px 0;
-        background: linear-gradient(
-          135deg,
-          rgba(56, 179, 129, 0.2),
-          rgba(56, 179, 129, 0.08)
-        );
-        border-radius: 20px;
-        border: 3px solid var(--accent);
-        color: var(--accent);
-        line-height: 1.6;
-        box-shadow: 0 12px 40px rgba(56, 179, 129, 0.2);
-      }
-
-      /* CTA Section */
-      .cta-section {
-        text-align: center;
-        margin: 80px 0;
-      }
-
-      .cta-buttons {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 40px;
-      }
-
-      .cta-btn-secondary {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        padding: 20px 32px;
-        background: linear-gradient(135deg, #5a6371, #3a4351);
-        border: none;
-        border-radius: 14px;
-        color: white;
-        font-weight: 800;
-        font-size: 1.15rem;
-        text-decoration: none;
-        transition: all 200ms ease;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      }
-
-      .cta-btn-secondary:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-        filter: brightness(1.15);
-      }
-
-      /* Final Card */
-      .final-card {
-        background: linear-gradient(
-          135deg,
-          rgba(56, 179, 129, 0.15),
-          rgba(56, 179, 129, 0.08)
-        );
-        border: 3px solid var(--accent);
-        border-radius: 20px;
-        padding: 48px;
-        text-align: center;
-        margin: 60px 0;
-        box-shadow: 0 12px 48px rgba(56, 179, 129, 0.2);
-      }
-
-      .final-title {
-        font-size: 1.8rem;
-        font-weight: 900;
-        margin: 0 0 16px 0;
-        line-height: 1.5;
-      }
-
-      .final-author {
-        font-size: 1.3rem;
-        color: var(--muted);
-        margin: 0;
-      }
-
-      .final-author em {
-        font-style: italic;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -509,187 +34,340 @@
       </header>
 
       <main>
-        <!-- Hero Section -->
         <section class="hero">
-          <!-- <div class="language-selector">
-            <a href="./index.html" class="lang-link"> عرض باللغة الإنجليزية </a>
-          </div> -->
-
-          <h1 class="hero-title">
+          <h1
+            class="page-title"
+            style="max-width: 1090px; margin: 0 auto; margin-bottom: 20px"
+          >
             الكتابُ الأبيض: حلُّ الخروج المشترك من الأزمة الفلسطينيَّة
           </h1>
-
-          <div class="author-card">
-            <p>
-              <em
-                >بقلم: ج. مانويل غونزاليس. لا يُعتبرالسيد/ غونزاليس خبيراً في
-                شؤون الشرق الأوسط، ولكنه يقدم أشكالًا مغايرة من الخبرة التي
-                يفتقر إليها على ما يبدو خبراء الشرق الأوسط في السابق وحتى في
-                وقتنا الحالي مثل فهم اقتصاديات التنمية والتمويل الدولي وعقد
-                صفقات تجارية إبداعية، لكنه يعتمد في هذه المقالة على خلفية واسعة
-                ومتعددة الثقافات من خلال العمل في أربع قارات، فضلًا عن خبرته
-                لسنواتٍ بالبنك الدولي على مستوى تقديم المشورة للحكومات والشركات
-                وعقليته الريادية الإبداعية. لمزيد من المعلومات عنه، راجع</em
-              >
-              <a
-                href="https://www.plantationbay.com/Credentials.asp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                https://www.plantationbay.com/Credentials.asp
-              </a>
+          <div class="hero-content">
+            <p class="lead-text">
+              <i>
+                بقلم: ج. مانويل غونزاليس. لا يُعتبر السيد/غونزاليس خبيراً في
+                شؤون الشرق الأوسط، لكنه يقدّم خبرات بديلة يفتقر إليها الخبراء
+                التقليديون: فهم اقتصاديات التنمية، التمويل الدولي، وإبرام
+                الصفقات الإبداعية. للاطّلاع على بياناته المهنية، راجع
+                <a
+                  href="https://www.plantationbay.com/Credentials.asp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  style="
+                    padding: 10px 18px;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    width: auto;
+                    background: none;
+                    color: teal;
+                    text-decoration-line: underline;
+                  "
+                  ><span aria-hidden="true">👤</span
+                  ><span>السيرة المهنية للسيد غونزاليس</span></a
+                >.
+              </i>
             </p>
           </div>
+        </section>
 
-          <a
-            href="https://plantationbay.com/palestine/Arabic.html"
-            class="pdf-btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span aria-hidden="true">📄</span>
-            <span
-              >نزّل نسخة PDF من ورقة «حل الخروج المشترك للأزمة الفلسطينية»
-              (باللغة العربيَّة)</span
+        <nav class="toc-section">
+          <div class="toc-card">
+            <h3 class="toc-title" style="text-align: center; font-size: 2.5rem">
+              جدول المحتويات
+              <p
+                style="
+                  font-size: 0.8rem;
+                  font-style: italic;
+                  font-weight: 400;
+                  color: #2a2a2a;
+                  margin: 0px 0 12px 0;
+                  padding-right: 8px;
+                "
+              >
+                ( انقر على أي عنصر للانتقال إلى القسم أو عرضه )
+              </p>
+            </h3>
+
+            <h4
+              style="
+                font-size: 1.15rem;
+                font-weight: 400;
+                color: #2a2a2a;
+                margin: 40px 0 12px 0;
+                padding-right: 8px;
+                border-right: 3px solid rgba(210, 189, 134, 0.6);
+              "
             >
-          </a>
-        </section>
+              حلُّ الخروج المشترك من الأزمة الفلسطينيَّة ( الجزء 1 من 4 )
+            </h4>
+            <ul class="toc-list">
+              <li>
+                <a
+                  href="#P1"
+                  class="toc-link"
+                  onclick="openContentModal('P1'); return false;"
+                >
+                  <span class="toc-number">1</span>
+                  <span>الجزء (1): سجناءٌ داخل خبرتهم الخاصة</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#P2"
+                  class="toc-link"
+                  onclick="openContentModal('P2'); return false;"
+                >
+                  <span class="toc-number">2</span>
+                  <span
+                    >الجزء (2): ليستا دولتين متجاورتين، بل دولتين
+                    متباعدتين!</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#P3"
+                  class="toc-link"
+                  onclick="openContentModal('P3'); return false;"
+                >
+                  <span class="toc-number">3</span>
+                  <span
+                    >الجزء (3): إن بنينا فلسطين الجديدة، فسيقدمون إليها</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#P4"
+                  class="toc-link"
+                  onclick="openContentModal('P4'); return false;"
+                >
+                  <span class="toc-number">4</span>
+                  <span>الجزء (4): الخلاصة والاعتراضات والتفنيدات</span>
+                </a>
+              </li>
+            </ul>
 
-        <hr class="section-divider" />
+            <h4
+              style="
+                font-size: 1.15rem;
+                font-weight: 400;
+                color: #2a2a2a;
+                margin: 40px 0 12px 0;
+                padding-right: 8px;
+                border-right: 3px solid rgba(210, 189, 134, 0.6);
+              "
+            >
+              نسخة PDF من هذه الورقة البيضاء
+            </h4>
+            <ul class="toc-list" style="margin-bottom: 24px">
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="showPDF('arabic')"
+                  class="toc-link"
+                >
+                  <span class="toc-number">📄</span>
+                  <span>النسخة العربية PDF</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  onclick="showPDF('english')"
+                  class="toc-link"
+                >
+                  <span class="toc-number">📄</span>
+                  <span>النسخة الإنجليزية PDF</span>
+                </a>
+              </li>
+            </ul>
 
-        <!-- Videos Section -->
-        <section class="videos-section">
-          <h2 class="section-heading">مقاطع الفيديو</h2>
-
-          <div class="videos-grid">
-            <div class="video-item">
-              <div class="video-embed-wrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/YZtBEU0ijbM"
-                  title="مقطع الفيديو (1): سجناءٌ داخل خبرتهم الخاصة"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-info">
-                <h3 class="video-heading">
-                  مقطع الفيديو (1): سجناءٌ داخل خبرتهم الخاصة
-                </h3>
-                <p class="video-stats">
-                  <span aria-hidden="true">👁</span>
-                  <span>(الإنجليزية) 238,000 مشاهدة في 11 أشهر</span>
-                </p>
-              </div>
-            </div>
-
-            <div class="video-item">
-              <div class="video-embed-wrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/7jyjtP12Djg"
-                  title="مقطع الفيديو (2): ليستا دولتين متجاورتين، بل دولتين متباعدتين!"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-info">
-                <h3 class="video-heading">
-                  مقطع الفيديو (2): ليستا دولتين متجاورتين، بل دولتين متباعدتين!
-                </h3>
-                <p class="video-stats">
-                  <span aria-hidden="true">👁</span>
-                  <span>(الإنجليزية) 222,000 مشاهدة في 11 أشهر</span>
-                </p>
-              </div>
-            </div>
-
-            <div class="video-item">
-              <div class="video-embed-wrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/CAPtBjwlANU"
-                  title="مقطع الفيديو (3): إن بنينا فلسطين الجديدة، فسيقدمون إليها"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-info">
-                <h3 class="video-heading">
-                  مقطع الفيديو (3): إن بنينا فلسطين الجديدة، فسيقدمون إليها
-                </h3>
-                <p class="video-stats">
-                  <span aria-hidden="true">👁</span>
-                  <span>(الإنجليزية) 254,000 مشاهدة في 11 أشهر</span>
-                </p>
-              </div>
-            </div>
-
-            <div class="video-item">
-              <div class="video-embed-wrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/40L7cUUVDHo"
-                  title="مقطع الفيديو (4): الخلاصة والاعتراضات والتفنيدات"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-info">
-                <h3 class="video-heading">
-                  مقطع الفيديو (4): الخلاصة والاعتراضات والتفنيدات
-                </h3>
-                <p class="video-stats">
-                  <span aria-hidden="true">👁</span>
-                  <span>(الإنجليزية) 232,000 مشاهدة في 11 أشهر</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <hr class="section-divider" />
-
-        <!-- Philippine Star Articles -->
-        <section class="articles-section">
-          <h2 class="section-heading">مقالة موسعة من قسم «افتتاحيات الضيوف»</h2>
-          <p class="articles-intro">
-            والتي نُشرت في صحيفة Philippine Star (الصحيفة اليومية الرائدة في
-            البلاد).
-          </p>
-
-          <a
-            href="https://www.philstar.com/opinion/2024/02/17/2333964/only-remaining-possible-solution-palestine-problem"
-            class="article-card"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="article-icon" aria-hidden="true">📰</span>
-            <span>الجزء (1)</span>
-          </a>
-
-          <a
-            href="https://www.philstar.com/opinion/2024/02/18/2334133/only-remaining-possible-solution-palestine-problem"
-            class="article-card"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="article-icon" aria-hidden="true">📰</span>
-            <span>الجزء (2)</span>
-          </a>
-        </section>
-
-        <hr class="section-divider" />
-
-        <!-- Parts Navigation -->
-        <nav class="parts-nav">
-          <h3>أجزاء الكتاب الأبيض</h3>
-          <div class="parts-grid">
-            <a href="#part-1" class="part-link">الجزء (1)</a>
-            <a href="#part-2" class="part-link">الجزء (2)</a>
-            <a href="#part-3" class="part-link">الجزء (3)</a>
-            <a href="#part-4" class="part-link">الجزء (4)</a>
+            <h4
+              style="
+                font-size: 1.15rem;
+                font-weight: 400;
+                color: #2a2a2a;
+                margin: 40px 0 12px 0;
+                padding-right: 8px;
+                border-right: 3px solid rgba(210, 189, 134, 0.6);
+              "
+            >
+              مقالات رأي في Philippine Star
+              <p
+                style="
+                  font-size: 0.8rem;
+                  font-style: italic;
+                  font-weight: 400;
+                  color: #2a2a2a;
+                  margin: 0px 0 12px 0;
+                  padding-right: 8px;
+                "
+              >
+                ( الصحيفة اليومية الرائدة في البلاد )
+              </p>
+            </h4>
+            <ul class="toc-list" style="margin-bottom: 24px">
+              <li>
+                <a
+                  href="https://www.philstar.com/opinion/2024/02/17/2333964/only-remaining-possible-solution-palestine-problem"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="toc-link"
+                >
+                  <span class="toc-number">📰</span>
+                  <span style="text-decoration: none; font-size: 0.75rem"
+                    >https://www.philstar.com/opinion/2024/02/17/2333964/only-remaining-possible-solution-palestine-problem</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.philstar.com/opinion/2024/02/18/2334133/only-remaining-possible-solution-palestine-problem"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="toc-link"
+                >
+                  <span class="toc-number">📰</span>
+                  <span style="text-decoration: none; font-size: 0.75rem"
+                    >https://www.philstar.com/opinion/2024/02/18/2334133/only-remaining-possible-solution-palestine-problem</span
+                  >
+                </a>
+              </li>
+            </ul>
           </div>
         </nav>
 
+        <section
+          class="card stack"
+          style="margin-top: 40px; padding-bottom: 40px; margin-bottom: 40px"
+        >
+          <h2 class="section-title">
+            <b
+              >مجموعة الفيديوهات الكاملة المواكبة لهذه الورقة متوفرة على
+              YouTube</b
+            >
+          </h2>
+          <div class="video-player-section">
+            <div class="featured-video">
+              <div class="featured-video-embed">
+                <iframe
+                  id="featured-player"
+                  src="https://www.youtube.com/embed/YZtBEU0ijbM"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="featured-video-info">
+                <p class="featured-video-title" id="featured-title">
+                  مقطع الفيديو (1): سجناءٌ داخل خبرتهم الخاصة
+                </p>
+                <div class="featured-video-meta">
+                  <span class="view-count" id="featured-views"
+                    >238,000 مشاهدة في 11 أشهر</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="video-thumbnails" style="margin-top: 20px">
+              <div
+                class="video-thumb active"
+                onclick="switchVideo('YZtBEU0ijbM', 'مقطع الفيديو (1): سجناءٌ داخل خبرتهم الخاصة', '238,000 مشاهدة في 11 أشهر', this)"
+              >
+                <div class="thumb-image">
+                  <img
+                    src="https://img.youtube.com/vi/YZtBEU0ijbM/mqdefault.jpg"
+                    alt="Video 1 thumbnail"
+                  />
+                </div>
+                <div class="thumb-info">
+                  <p class="thumb-title">
+                    مقطع الفيديو (1): سجناءٌ داخل خبرتهم الخاصة
+                  </p>
+                  <div class="thumb-meta">
+                    <span class="view-count">238,000 مشاهدة في 11 أشهر</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="video-thumb"
+                onclick="switchVideo('7jyjtP12Djg', 'مقطع الفيديو (2): ليستا دولتين متجاورتين، بل دولتين متباعدتين!', '222,000 مشاهدة في 11 أشهر', this)"
+              >
+                <div class="thumb-image">
+                  <img
+                    src="https://img.youtube.com/vi/7jyjtP12Djg/mqdefault.jpg"
+                    alt="Video 2 thumbnail"
+                  />
+                </div>
+                <div class="thumb-info">
+                  <p class="thumb-title">
+                    مقطع الفيديو (2): ليستا دولتين متجاورتين، بل دولتين
+                    متباعدتين!
+                  </p>
+                  <div class="thumb-meta">
+                    <span class="view-count">222,000 مشاهدة في 11 أشهر</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="video-thumb"
+                onclick="switchVideo('CAPtBjwlANU', 'مقطع الفيديو (3): إن بنينا فلسطين الجديدة، فسيقدمون إليها', '254,000 مشاهدة في 11 أشهر', this)"
+              >
+                <div class="thumb-image">
+                  <img
+                    src="https://img.youtube.com/vi/CAPtBjwlANU/mqdefault.jpg"
+                    alt="Video 3 thumbnail"
+                  />
+                </div>
+                <div class="thumb-info">
+                  <p class="thumb-title">
+                    مقطع الفيديو (3): إن بنينا فلسطين الجديدة، فسيقدمون إليها
+                  </p>
+                  <div class="thumb-meta">
+                    <span class="view-count">254,000 مشاهدة في 11 أشهر</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="video-thumb"
+                onclick="switchVideo('40L7cUUVDHo', 'مقطع الفيديو (4): الخلاصة والاعتراضات والتفنيدات', '232,000 مشاهدة في 11 أشهر', this)"
+              >
+                <div class="thumb-image">
+                  <img
+                    src="https://img.youtube.com/vi/40L7cUUVDHo/mqdefault.jpg"
+                    alt="Video 4 thumbnail"
+                  />
+                </div>
+                <div class="thumb-info">
+                  <p class="thumb-title">
+                    مقطع الفيديو (4): الخلاصة والاعتراضات والتفنيدات
+                  </p>
+                  <div class="thumb-meta">
+                    <span class="view-count">232,000 مشاهدة في 11 أشهر</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 20px; text-align: center">
+            <a
+              href="./index.html"
+              class="btn btn-primary"
+              style="display: inline-flex; width: auto"
+            >
+              <span aria-hidden="true">🎬</span>
+              <span>شاهد الفيديوهات بالإنجليزية</span>
+            </a>
+          </div>
+        </section>
+
         <!-- Part 1 -->
-        <article id="part-1" class="content-article">
+        <article id="P1" class="content-article card prose" style="max-width: 1090px; margin: 0 auto;">
           <h2 class="article-title">
             الجزء (1) من (4): حلُّ الخروج المشترك من الأزمة الفلسطينيَّة: سجناءٌ
             داخل خبرتهم الخاصة
@@ -988,7 +666,7 @@
         </article>
 
         <!-- Part 2 -->
-        <article id="part-2" class="content-article">
+        <article id="P2" class="content-article card prose" style="max-width: 1090px; margin: 0 auto;">
           <h2 class="article-title">
             الجزء (2) من (4): ليستا دولتين متجاورتين، بل دولتين متباعدتين!
           </h2>
@@ -1310,7 +988,7 @@
         </article>
 
         <!-- Part 3 -->
-        <article id="part-3" class="content-article">
+        <article id="P3" class="content-article card prose" style="max-width: 1090px; margin: 0 auto;">
           <h2 class="article-title">
             الجزء (3) من (4): إن بنينا فلسطين الجديدة، فسيقدمون إليها
           </h2>
@@ -1837,7 +1515,7 @@
         </article>
 
         <!-- Part 4 -->
-        <article id="part-4" class="content-article">
+        <article id="P4" class="content-article card prose" style="max-width: 1090px; margin: 0 auto;">
           <h2 class="article-title">
             الجزء (4) من (4): الخلاصة والاعتراضات والتفنيدات
           </h2>
@@ -2515,26 +2193,231 @@
               الفلسطينيَّة</strong
             >
           </p>
-          <p class="final-author">بقلم: <em>ج. مانويل غونزاليس.</em></p>
+          <p class="final-author">بقلم: <i><a href="https://www.plantationbay.com/Credentials.asp" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">ج. مانويل غونزاليس</a>.</em></p>
         </div>
+
+        <!-- Desktop fullscreen modal for content sections -->
+        <div
+          class="content-modal"
+          id="contentModal"
+          aria-hidden="true"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div class="content-modal-content" role="document">
+            <button
+              type="button"
+              class="content-modal-close"
+              aria-label="إغلاق"
+              title="إغلاق"
+              onclick="closeContentModal()"
+            >
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18 6L6 18M6 6l12 12"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="content-modal-inner" id="modalContentArea"></div>
+          </div>
+        </div>
+
+        <!-- Desktop fullscreen modal for PDF viewer -->
+        <div
+          class="content-modal"
+          id="pdfModal"
+          aria-hidden="true"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div class="content-modal-content" role="document">
+            <button
+              type="button"
+              class="content-modal-close"
+              aria-label="إغلاق"
+              title="إغلاق"
+              onclick="closePDFModal()"
+            >
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18 6L6 18M6 6l12 12"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div style="max-width: 1600px; margin: 0 auto; width: 100%">
+              <h2
+                id="pdf-modal-title"
+                style="
+                  font-family: 'AaMgScript-Regular', 'Georgia', serif;
+                  font-size: 2rem;
+                  text-align: center;
+                  margin: 0 0 24px 0;
+                  color: #2a2a2a;
+                "
+              ></h2>
+              <div
+                style="background: #000; border-radius: 8px; overflow: hidden"
+              >
+                <iframe
+                  id="pdf-modal-iframe"
+                  style="width: 100%; height: 85vh; border: none"
+                  src=""
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function switchVideo(videoId, title, views, thumbElement) {
+            document.getElementById("featured-player").src =
+              "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+            document.getElementById("featured-title").textContent = title;
+            document.getElementById("featured-views").textContent = views;
+            document.querySelectorAll(".video-thumb").forEach(function (thumb) {
+              thumb.classList.remove("active");
+            });
+            thumbElement.classList.add("active");
+            document
+              .querySelector(".featured-video")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+
+          function isDesktop() {
+            return window.matchMedia("(min-width: 992px)").matches;
+          }
+
+          function openContentModal(sectionId) {
+            if (!isDesktop()) {
+              var el = document.getElementById(sectionId);
+              if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+              return;
+            }
+            const modal = document.getElementById("contentModal");
+            const modalContent = document.getElementById("modalContentArea");
+            const sourceSection = document.getElementById(sectionId);
+            if (!modal || !sourceSection) return;
+            const cloned = sourceSection.cloneNode(true);
+            modalContent.innerHTML = "";
+            modalContent.appendChild(cloned);
+            document.documentElement.classList.add("content-modal-open");
+            document.body.classList.add("content-modal-open");
+            modal.classList.add("open");
+            modal.setAttribute("aria-hidden", "false");
+          }
+
+          function closeContentModal() {
+            const modal = document.getElementById("contentModal");
+            modal.classList.remove("open");
+            modal.setAttribute("aria-hidden", "true");
+            document.documentElement.classList.remove("content-modal-open");
+            document.body.classList.remove("content-modal-open");
+          }
+
+          function showPDF(language) {
+            const modal = document.getElementById("pdfModal");
+            const pdfIframe = document.getElementById("pdf-modal-iframe");
+            const pdfTitle = document.getElementById("pdf-modal-title");
+            if (language === "english") {
+              pdfIframe.src =
+                "./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ENGLISH.pdf";
+              pdfTitle.textContent =
+                "English PDF Version : The Non-Zero-Sum Solution to the Palestine Crisis";
+            } else {
+              pdfIframe.src =
+                "./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ARABIC.pdf";
+              pdfTitle.textContent =
+                "النسخة العربية PDF : حلُّ الخروج المشترك من الأزمة الفلسطينيَّة";
+            }
+            document.documentElement.classList.add("content-modal-open");
+            document.body.classList.add("content-modal-open");
+            modal.classList.add("open");
+            modal.setAttribute("aria-hidden", "false");
+          }
+
+          function closePDFModal() {
+            const modal = document.getElementById("pdfModal");
+            const pdfIframe = document.getElementById("pdf-modal-iframe");
+            modal.classList.remove("open");
+            modal.setAttribute("aria-hidden", "true");
+            document.documentElement.classList.remove("content-modal-open");
+            document.body.classList.remove("content-modal-open");
+            pdfIframe.src = "";
+          }
+
+          document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+              closeContentModal();
+              closePDFModal();
+            }
+          });
+
+          document
+            .getElementById("contentModal")
+            ?.addEventListener("click", function (e) {
+              if (e.target === this) closeContentModal();
+            });
+
+          document
+            .getElementById("pdfModal")
+            ?.addEventListener("click", function (e) {
+              if (e.target === this) closePDFModal();
+            });
+        </script>
       </main>
 
       <footer class="footer">
-        <div class="backlinks">
-          <a
-            href="https://plantationbay.com/palestine/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >https://plantationbay.com/palestine/</a
-          >
-          <a
-            href="https://plantationbay.com/palestine/Arabic.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            >https://plantationbay.com/palestine/Arabic.html</a
-          >
-        </div>
+
       </footer>
+    </div>
+    <div
+      style="
+        margin-top: 10px;
+        text-align: center;
+        font-size: 0.8rem;
+        color: var(--muted);
+        background-color: var(--panel);
+      "
+    >
+      © 2025
+      <a
+        href="https://plantationbay.com/palestine/Arabic.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="
+          color: inherit;
+          text-decoration: underline;
+          text-transform: uppercase;
+        "
+        >The Non-Zero-Sum Solution to the Palestine Crisis</a
+      >. All rights reserved. Design and development by
+      <a
+        href="https://plantationbay.com/english"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="color: inherit; text-decoration: underline"
+        >Leox</a
+      >.
     </div>
   </body>
 </html>
