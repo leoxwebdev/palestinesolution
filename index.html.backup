@@ -19,47 +19,89 @@
     />
     <meta property="og:site_name" content="PALESTINE" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./styles.css?v=2" />
-    <link rel="stylesheet" href="./index-styles.css?v=2" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./index-styles.css" />
   </head>
   <body>
     <div class="container">
       <header class="site-header">
-        <a class="brand" href="./">
+        <a class="brand" href="/">
           <span class="brand-mark" aria-hidden="true"></span>
           <span class="brand-name">palestinesolution.com</span>
         </a>
         <nav class="language-switch" aria-label="Language">
           <a
             class="chip"
-            href="./ar.html"
+            href="/ar.html"
             hreflang="ar"
             aria-label="العربية — Arabic version"
-          ><span
-          style="
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            color: var(--muted);
-          "
-          >Display page in</span
+          >
             <span aria-hidden="true">🌍</span>
-            <span style="font-size: 18px;">العربية</span>
-          </a>
-          <!-- <a href="./ar.html" class="lang-badge">
             <span>العربية</span>
-          </a> -->
+          </a>
         </nav>
       </header>
 
       <main>
         <section class="hero">
           <div class="hero-content">
-            <h1 class="page-title">
+            <div
+              style="
+                display: flex;
+                align-items: baseline;
+                gap: 12px;
+                margin-bottom: 8px;
+              "
+            >
+              <span
+                style="
+                  font-size: 14px;
+                  font-weight: 600;
+                  letter-spacing: 0.5px;
+                  text-transform: uppercase;
+                  color: var(--muted);
+                "
+                >Display page in</span
+              >
+              <a
+                href="https://plantationbay.com/palestine/Arabic.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 6px;
+                  padding: 4px 12px;
+                  border-radius: 6px;
+                  background: rgba(56, 179, 129, 0.1);
+                  border: 1px solid rgba(56, 179, 129, 0.3);
+                  color: var(--text);
+                  text-decoration: none;
+                  font-size: 13px;
+                  font-weight: 600;
+                "
+              >
+                <span>العربية</span>
+              </a>
+            </div>
+            <h1
+              style="
+                font-size: clamp(1.75rem, 4vw, 2.5rem);
+                font-weight: 700;
+                line-height: 1.2;
+                margin: 0 0 16px 0;
+              "
+            >
               The Non-Zero-Sum Solution to the Palestine Crisis
             </h1>
-            <p class="lead-text">
+            <p
+              style="
+                font-size: 1.05rem;
+                line-height: 1.7;
+                color: var(--muted);
+                margin: 0;
+              "
+            >
               <i
                 >By J. Manuel González. Mr. Gonzalez is not a Middle East Expert
                 but offers alternative kinds of expertise that past and present
@@ -73,188 +115,19 @@
                 <a
                   href="https://www.plantationbay.com/Credentials.asp"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
                   style="
-                    padding: 10px 18px;
-                    display: inline-flex;
-                    align-items: center;
-                    gap: 8px;
-                    width: auto;
-                    font-size: 0.95rem;
-                    background-color:transparent;
-                    background:none;
-                    color: teal;
-                    text-decoration-line: underline;
+                    color: var(--accent);
+                    text-decoration: none;
+                    border-bottom: 1px solid var(--accent);
                   "
-                  ><span aria-hidden="true">👤</span
-                  ><span>J. Manuel González's Credentials</span></a
+                  >https://www.plantationbay.com/Credentials.asp</a
                 >.</i
               >
             </p>
           </div>
         </section>
 
-        <nav class="toc-section">
-          <div class="toc-card">
-            <h3 class="toc-title" style="text-align: center; font-size: 1.5rem;">Table of Contents
-              <p style="font-size: 0.8rem;font-style: italic;font-weight: 400;color: #2a2a2a;margin: 0px 0 12px 0; padding-left: 8px; border-left: 3px solid rgba(210, 189, 134, 0.6);">( Click on a list item/link below to jump to that section )</p>
-            </h3>
- 
-            
-             <h4 style="font-family: 'AaMgScript-Regular', 'Georgia', serif; font-size: 1.15rem; font-weight: 400; color: #2a2a2a; margin: 40px 0 12px 0; padding-left: 8px; border-left: 3px solid rgba(210, 189, 134, 0.6);">The Non-Zero-Sum Solution to the Palestine Crisis</h4>
-             <ul class="toc-list">
-               <li>
-                 <a href="#P1" class="toc-link" onclick="openContentModal('P1'); return false;">
-                   <span class="toc-number">1</span>
-                   <span>Part 1: Prisoners of Their Expertise</span>
-                 </a>
-               </li>
-               <li>
-                 <a href="#P2" class="toc-link" onclick="openContentModal('P2'); return false;">
-                   <span class="toc-number">2</span>
-                   <span>Part 2: The Real Art of the Deal</span>
-                 </a>
-               </li>
-               <li>
-                 <a href="#P3" class="toc-link" onclick="openContentModal('P3'); return false;">
-                   <span class="toc-number">3</span>
-                   <span>Part 3: If We Build It, They Will Come</span>
-                 </a>
-               </li>
-               <li>
-                 <a href="#P4" class="toc-link" onclick="openContentModal('P4'); return false;">
-                   <span class="toc-number">4</span>
-                   <span>Part 4: Recapitulation and Rebuttals</span>
-                 </a>
-               </li>
-             </ul>
-            
-            <h4 style="font-family: 'AaMgScript-Regular', 'Georgia', serif; font-size: 1.15rem; font-weight: 400; color: #2a2a2a; margin: 40px 0 12px 0; padding-left: 8px; border-left: 3px solid rgba(210, 189, 134, 0.6);">PDF Version</h4>
-            <ul class="toc-list" style="margin-bottom: 24px;">
-              <li>
-                <a href="javascript:void(0);" onclick="showPDF('english')" class="toc-link">
-                  <span class="toc-number">📄</span>
-                  <span>English PDF Version</span>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void(0);" onclick="showPDF('arabic')" class="toc-link">
-                  <span class="toc-number">📄</span>
-                  <span>Arabic PDF Version</span>
-                </a>
-              </li>
-            </ul>
-                        
-            <h4 style="font-family: 'AaMgScript-Regular', 'Georgia', serif; font-size: 1.15rem; font-weight: 400; color: #2a2a2a; margin: 40px 0 12px 0; padding-left: 8px; border-left: 3px solid rgba(210, 189, 134, 0.6);">Expanded from Guest Editorials which appeared in the Philippine Star (the country's leading daily newspaper).</h4>
-            <ul class="toc-list" style="margin-bottom: 24px;">
-              <li>
-                <a href="https://www.philstar.com/opinion/2024/02/17/2333964/only-remaining-possible-solution-palestine-problem" target="_blank" rel="noopener noreferrer" class="toc-link">
-                  <span class="toc-number">📰</span>
-                  <span>Part 1 - https://www.philstar.com/opinion/2024/02/17/2333964/only-remaining-possible-solution-palestine-problem</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.philstar.com/opinion/2024/02/18/2334133/only-remaining-possible-solution-palestine-problem" target="_blank" rel="noopener noreferrer" class="toc-link">
-                  <span class="toc-number">📰</span>
-                  <span>Part 2 - https://www.philstar.com/opinion/2024/02/18/2334133/only-remaining-possible-solution-palestine-problem</span>
-                </a>
-              </li>
-            </ul>
-            
-          </div>
-        </nav>  
-
-        <section class="card stack" style="margin-top: 40px; padding-bottom: 40px;margin-bottom: 40px;">
-          <h2 class="section-title">
-            <b
-              >Complete Set of Videos Paralleling this White Paper Now Live on
-              YouTube</b
-            >
-          </h2>
-          <div class="video-grid">
-            <div class="video-card">
-              <div class="video-embed">
-                <iframe
-                  src="https://www.youtube.com/embed/OfFd6VI05wg"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-info">
-                <p class="video-title">Video 1: Prisoners of their Expertise</p>
-                <div class="video-meta">
-                  <span class="view-count">96,000 views in 14 months</span>
-                </div>
-              </div>
-            </div>
-            <div class="video-card">
-              <div class="video-embed">
-                <iframe
-                  src="https://www.youtube.com/embed/6gec5C-4dC4"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-info">
-                <p class="video-title">
-                  Video 2: Not Two-States-Side-by-Side, but Two States Far
-                  Apart!
-                </p>
-                <div class="video-meta">
-                  <span class="view-count">71,000 views in 14 months</span>
-                </div>
-              </div>
-            </div>
-            <div class="video-card">
-              <div class="video-embed">
-                <iframe
-                  src="https://www.youtube.com/embed/K6FHxgTTBKQ"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-info">
-                <p class="video-title">
-                  Video 3: If We Build New Palestine, They Will Come
-                </p>
-                <div class="video-meta">
-                  <span class="view-count">87,000 views in 14 months</span>
-                </div>
-              </div>
-            </div>
-            <div class="video-card">
-              <div class="video-embed">
-                <iframe
-                  src="https://www.youtube.com/embed/Elh7YUTMaT4"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-info">
-                <p class="video-title">
-                  Video 4: Recapitulation, Objections, And Rebuttals
-                </p>
-                <div class="video-meta">
-                  <span class="view-count">84,000 views in 14 months</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div style="margin-top: 20px; text-align: center">
-            <a
-              href="./ar.html"
-              class="btn btn-primary"
-              style="display: inline-flex; width: auto"
-            >
-              <span aria-hidden="true">🎬</span>
-              <span>Watch Arabic Videos</span>
-            </a>
-          </div>
-        </section>
-
-      
-        <!-- <section class="card stack" style="margin-top: 24px">
+        <section class="card stack" style="margin-top: 24px">
           <div>
             <p style="margin: 0 0 12px 0; font-weight: 600">
               <b
@@ -292,69 +165,219 @@
               >
             </p>
           </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="card stack" style="margin-top: 16px">
+        <section class="card stack" style="margin-top: 16px">
+          <h2 style="margin: 0 0 12px 0; font-size: 1.4rem; font-weight: 700">
+            <b
+              >Complete Set of Videos Paralleling this White Paper Now Live on
+              YouTube</b
+            >
+          </h2>
+          <div class="stack">
+            <div>
+              <p style="margin: 0 0 6px 0; font-weight: 600">
+                Video 1: Prisoners of their Expertise
+              </p>
+              <p style="margin: 0 0 4px 0; padding-left: 20px">
+                <a
+                  href="https://www.youtube.com/watch?v=OfFd6VI05wg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: var(--accent); text-decoration: none"
+                  >https://www.youtube.com/watch?v=OfFd6VI05wg</a
+                >
+                (English)
+                <span style="color: #ef4444">96,000 views in 14 months</span>
+              </p>
+              <p style="margin: 0; padding-left: 20px">
+                <a
+                  href="https://www.youtube.com/watch?v=YZtBEU0ijbM&t"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: var(--accent); text-decoration: none"
+                  >https://www.youtube.com/watch?v=YZtBEU0ijbM&t</a
+                >
+                (Arabic)
+                <span style="color: #ef4444">238,000 views in 11 months</span>
+              </p>
+            </div>
+            <div>
+              <p style="margin: 0 0 6px 0; font-weight: 600">
+                Video 2: Not Two-States-Side-by-Side, but Two States Far Apart!
+              </p>
+              <p style="margin: 0 0 4px 0; padding-left: 20px">
+                <a
+                  href="https://www.youtube.com/watch?v=6gec5C-4dC4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: var(--accent); text-decoration: none"
+                  >https://www.youtube.com/watch?v=6gec5C-4dC4</a
+                >
+                (English)
+                <span style="color: #ef4444">71,000 views in 14 months</span>
+              </p>
+              <p style="margin: 0; padding-left: 20px">
+                <a
+                  href="https://www.youtube.com/watch?v=7jyjtP12Djg&t"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: var(--accent); text-decoration: none"
+                  >https://www.youtube.com/watch?v=7jyjtP12Djg&t</a
+                >
+                (Arabic)
+                <span style="color: #ef4444">222,000 views in 11 months</span>
+              </p>
+            </div>
+            <div>
+              <p style="margin: 0 0 6px 0; font-weight: 600">
+                Video 3: If We Build New Palestine, They Will Come
+              </p>
+              <p style="margin: 0 0 4px 0; padding-left: 20px">
+                <a
+                  href="https://www.youtube.com/watch?v=K6FHxgTTBKQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: var(--accent); text-decoration: none"
+                  >https://www.youtube.com/watch?v=K6FHxgTTBKQ</a
+                >
+                (English)
+                <span style="color: #ef4444">87,000 views in 14 months</span>
+              </p>
+              <p style="margin: 0; padding-left: 20px">
+                <a
+                  href="https://www.youtube.com/watch?v=CAPtBjwlANU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: var(--accent); text-decoration: none"
+                  >https://www.youtube.com/watch?v=CAPtBjwlANU</a
+                >
+                (Arabic)
+                <span style="color: #ef4444">254,000 views in 11 months</span>
+              </p>
+            </div>
+            <div>
+              <p style="margin: 0 0 6px 0; font-weight: 600">
+                Video 4: Recapitulation, Objections, And Rebuttals
+              </p>
+              <p style="margin: 0 0 4px 0; padding-left: 20px">
+                <a
+                  href="https://www.youtube.com/watch?v=Elh7YUTMaT4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: var(--accent); text-decoration: none"
+                  >https://www.youtube.com/watch?v=Elh7YUTMaT4</a
+                >
+                (English)
+                <span style="color: #ef4444">84,000 views in 14 months</span>
+              </p>
+              <p style="margin: 0; padding-left: 20px">
+                <a
+                  href="https://www.youtube.com/watch?v=40L7cUUVDHo&t"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: var(--accent); text-decoration: none"
+                  >https://www.youtube.com/watch?v=40L7cUUVDHo&t</a
+                >
+                (Arabic)
+                <span style="color: #ef4444">232,000 views in 11 months</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card stack" style="margin-top: 16px">
           <h2 style="margin: 0 0 12px 0; font-size: 1.4rem; font-weight: 700">
             <b>English and Arabic PDF Version of this White Paper:</b>
           </h2>
           <div class="grid">
-            <button
+            <a
               class="btn btn-primary"
-              onclick="showPDF('english')"
-              style="cursor: pointer"
+              href="https://www.plantationbay.com/palestine/Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ENGLISH.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span aria-hidden="true">📄</span>
-              <span>View English PDF</span>
-            </button>
-            <button
+              <span>English PDF</span>
+            </a>
+            <a
               class="btn btn-primary"
-              onclick="showPDF('arabic')"
-              style="cursor: pointer"
+              href="https://www.plantationbay.com/palestine/Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ARABIC.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span aria-hidden="true">📄</span>
-              <span>View Arabic PDF</span>
-            </button>
+              <span>Arabic PDF</span>
+            </a>
           </div>
-        </section> -->
+        </section>
 
+        <nav class="toc-nav" style="margin-top: 32px">
+          <div class="card" style="padding: 16px">
+            <h3 style="margin: 0 0 12px 0; font-size: 1.1rem; font-weight: 600">
+              Table of Contents
+            </h3>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+              "
+            >
+              <li>
+                <a
+                  href="#P1"
+                  style="
+                    color: var(--text);
+                    text-decoration: none;
+                    opacity: 0.9;
+                  "
+                  >Part 1 of 4: Prisoners of Their Expertise</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#P2"
+                  style="
+                    color: var(--text);
+                    text-decoration: none;
+                    opacity: 0.9;
+                  "
+                  >Part 2 of 4: The Real Art of the Deal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#P3"
+                  style="
+                    color: var(--text);
+                    text-decoration: none;
+                    opacity: 0.9;
+                  "
+                  >Part 3 of 4: If We Build It, They Will Come</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#P4"
+                  style="
+                    color: var(--text);
+                    text-decoration: none;
+                    opacity: 0.9;
+                  "
+                  >Part 4 of 4: Recapitulation and Rebuttals</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-        <script>
-          function showPDF(language) {
-            const modal = document.getElementById('pdfModal');
-            const pdfIframe = document.getElementById('pdf-modal-iframe');
-            const pdfTitle = document.getElementById('pdf-modal-title');
-
-            if (language === 'english') {
-              pdfIframe.src = './Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ENGLISH.pdf';
-              pdfTitle.textContent = 'English PDF Version';
-            } else {
-              pdfIframe.src = './Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ARABIC.pdf';
-              pdfTitle.textContent = 'Arabic PDF Version';
-            }
-
-            // Show modal
-            document.documentElement.classList.add('content-modal-open');
-            document.body.classList.add('content-modal-open');
-            modal.classList.add('open');
-            modal.setAttribute('aria-hidden', 'false');
-          }
-
-          function closePDFModal() {
-            const modal = document.getElementById('pdfModal');
-            const pdfIframe = document.getElementById('pdf-modal-iframe');
-            
-            modal.classList.remove('open');
-            modal.setAttribute('aria-hidden', 'true');
-            document.documentElement.classList.remove('content-modal-open');
-            document.body.classList.remove('content-modal-open');
-            pdfIframe.src = '';
-          }
-        </script>
-
-        <article class="whitepaper" style="margin-top: 45px; padding-bottom: 40px;margin-bottom: 40px;">
+        <article class="whitepaper" style="margin-top: 32px">
           <section class="card prose" id="P1">
-            <h2 style="margin: 40px 0 16px 0; font-size: 1.6rem; font-weight: 700">
+            <h2 style="margin: 0 0 16px 0; font-size: 1.6rem; font-weight: 700">
               <a name="P1" style="color: inherit; text-decoration: none"
                 >Part 1 of 4</a
               >: The Non-Zero-Sum Solution to the Palestine Crisis: Prisoners of
@@ -549,7 +572,7 @@
           </section>
 
           <section class="card prose" id="P2" style="margin-top: 16px">
-            <h2 style="margin: 40px 0 16px 0; font-size: 1.6rem; font-weight: 700">
+            <h2 style="margin: 0 0 16px 0; font-size: 1.6rem; font-weight: 700">
               <a name="P2" style="color: inherit; text-decoration: none"
                 >Part 2 of 4</a
               >: The Non-Zero-Sum Solution to the Palestine Crisis: The Real Art
@@ -719,7 +742,7 @@
           </section>
 
           <section class="card prose" id="P3" style="margin-top: 16px">
-            <h2 style="margin: 40px 0 16px 0; font-size: 1.6rem; font-weight: 700">
+            <h2 style="margin: 0 0 16px 0; font-size: 1.6rem; font-weight: 700">
               <a name="P3" style="color: inherit; text-decoration: none"
                 >Part 3 of 4</a
               >: The Non-Zero-Sum Solution to the Palestine Crisis: If We Build
@@ -1012,7 +1035,7 @@
           </section>
 
           <section class="card prose" id="P4" style="margin-top: 16px">
-            <h2 style="margin: 40px 0 16px 0; font-size: 1.6rem; font-weight: 700">
+            <h2 style="margin: 0 0 16px 0; font-size: 1.6rem; font-weight: 700">
               <a name="P4" style="color: inherit; text-decoration: none"
                 >Part 4</a
               >: The Non-Zero-Sum Solution to the Palestine Crisis:
@@ -1271,108 +1294,23 @@
         </article>
       </main>
 
-      <!-- Desktop fullscreen modal for content sections -->
-      <div class="content-modal" id="contentModal" aria-hidden="true" role="dialog" aria-modal="true">
-        <div class="content-modal-content" role="document">
-          <button type="button" class="content-modal-close" aria-label="Close" title="Close" onclick="closeContentModal()">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="content-modal-inner" id="modalContentArea">
-            <!-- Content will be cloned here -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Desktop fullscreen modal for PDF viewer -->
-      <div class="content-modal" id="pdfModal" aria-hidden="true" role="dialog" aria-modal="true">
-        <div class="content-modal-content" role="document">
-          <button type="button" class="content-modal-close" aria-label="Close" title="Close" onclick="closePDFModal()">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div style="max-width: 1600px; margin: 0 auto; width: 100%;">
-            <h2 id="pdf-modal-title" style="font-family: 'AaMgScript-Regular', 'Georgia', serif; font-size: 2rem; text-align: center; margin: 0 0 24px 0; color: #2a2a2a;"></h2>
-            <div style="background: #000; border-radius: 8px; overflow: hidden;">
-              <iframe
-                id="pdf-modal-iframe"
-                style="width: 100%; height: 85vh; border: none;"
-                src=""
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <script>
-        function isDesktop() {
-          return window.matchMedia('(min-width: 992px)').matches;
-        }
-
-        function openContentModal(sectionId) {
-          if (!isDesktop()) {
-            // On mobile/tablet, just scroll to section
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth', block: 'start' });
-            return;
-          }
-
-          const modal = document.getElementById('contentModal');
-          const modalContent = document.getElementById('modalContentArea');
-          const sourceSection = document.getElementById(sectionId);
-          
-          if (!modal || !sourceSection) return;
-
-          // Clone the content
-          const clonedContent = sourceSection.cloneNode(true);
-          modalContent.innerHTML = '';
-          modalContent.appendChild(clonedContent);
-
-          // Show modal
-          document.documentElement.classList.add('content-modal-open');
-          document.body.classList.add('content-modal-open');
-          modal.classList.add('open');
-          modal.setAttribute('aria-hidden', 'false');
-        }
-
-        function closeContentModal() {
-          const modal = document.getElementById('contentModal');
-          modal.classList.remove('open');
-          modal.setAttribute('aria-hidden', 'true');
-          document.documentElement.classList.remove('content-modal-open');
-          document.body.classList.remove('content-modal-open');
-        }
-
-        // Close on escape key
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape') {
-            closeContentModal();
-            closePDFModal();
-          }
-        });
-
-        // Close on backdrop click
-        document.getElementById('contentModal')?.addEventListener('click', function(e) {
-          if (e.target === this) {
-            closeContentModal();
-          }
-        });
-
-        // Close PDF modal on backdrop click
-        document.getElementById('pdfModal')?.addEventListener('click', function(e) {
-          if (e.target === this) {
-            closePDFModal();
-          }
-        });
-      </script>
-
       <footer class="footer" style="margin-top: 48px">
-        <div class="author-card">
-          <p class="author-title">
+        <div
+          style="
+            text-align: center;
+            padding: 16px;
+            background: var(--panel);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 16px;
+          "
+        >
+          <p style="margin: 0; font-weight: 600">
             <b>The Non-Zero-Sum Solution to the Palestine Crisis</b>
           </p>
-          <p class="author-name">By <i>J. Manuel González</i></p>
+          <p style="margin: 4px 0 0 0; font-size: 14px; color: var(--muted)">
+            By <i>J. Manuel González</i>
+          </p>
         </div>
         <div class="backlinks" style="justify-content: center">
           <a
