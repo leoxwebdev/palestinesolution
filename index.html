@@ -19,8 +19,8 @@
     />
     <meta property="og:site_name" content="PALESTINE" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./styles.css?v=4" />
-    <link rel="stylesheet" href="./index-styles.css?v=4" />
+    <link rel="stylesheet" href="./styles.css?v=5" />
+    <link rel="stylesheet" href="./index-styles.css?v=5" />
   </head>
   <body>
     <div class="container">
@@ -37,7 +37,7 @@
             aria-label="العربية — Arabic version"
           ><span
           style="
-            font-size: 13px;
+            font-size: 10px;
             font-weight: 600;
             letter-spacing: 0.5px;
             text-transform: uppercase;
@@ -102,7 +102,7 @@
             </h3>
  
             
-             <h4 style="font-family: 'AaMgScript-Regular', 'Georgia', serif; font-size: 1.15rem; font-weight: 400; color: #2a2a2a; margin: 40px 0 12px 0; padding-left: 8px; border-left: 3px solid rgba(210, 189, 134, 0.6);">The Non-Zero-Sum Solution to the Palestine Crisis ( Part 1 of 4 )</h4>
+             <h4 style="font-size: 1.15rem; font-weight: 400; color: #2a2a2a; margin: 40px 0 12px 0; padding-left: 8px; border-left: 3px solid rgba(210, 189, 134, 0.6);">The Non-Zero-Sum Solution to the Palestine Crisis ( Part 1 of 4 )</h4>
              <ul class="toc-list">
                <li>
                  <a href="#P1" class="toc-link" onclick="openContentModal('P1'); return false;">
@@ -130,7 +130,7 @@
                </li>
              </ul>
             
-            <h4 style="font-family: 'AaMgScript-Regular', 'Georgia', serif; font-size: 1.15rem; font-weight: 400; color: #2a2a2a; margin: 40px 0 12px 0; padding-left: 8px; border-left: 3px solid rgba(210, 189, 134, 0.6);">PDF Version : The Non-Zero-Sum Solution to the Palestine Crisis</h4>
+            <h4 style="font-size: 1.15rem; font-weight: 400; color: #2a2a2a; margin: 40px 0 12px 0; padding-left: 8px; border-left: 3px solid rgba(210, 189, 134, 0.6);">PDF Version : The Non-Zero-Sum Solution to the Palestine Crisis</h4>
             <ul class="toc-list" style="margin-bottom: 24px;">
               <li>
                 <a href="javascript:void(0);" onclick="showPDF('english')" class="toc-link">
@@ -146,18 +146,18 @@
               </li>
             </ul>
                         
-            <h4 style="font-family: 'AaMgScript-Regular', 'Georgia', serif; font-size: 1.15rem; font-weight: 400; color: #2a2a2a; margin: 40px 0 12px 0; padding-left: 8px; border-left: 3px solid rgba(210, 189, 134, 0.6);">Expanded from Guest Editorials which appeared in the Philippine Star <p style="font-size: 0.8rem;font-style: italic;font-weight: 400;color: #2a2a2a;margin: 0px 0 12px 0; padding-left: 8px; ">(the country's leading daily newspaper)</p></h4>
+            <h4 style="font-size: 1.15rem; font-weight: 400; color: #2a2a2a; margin: 40px 0 12px 0; padding-left: 8px; border-left: 3px solid rgba(210, 189, 134, 0.6);">Expanded from Guest Editorials which appeared in the Philippine Star <p style="font-size: 0.8rem;font-style: italic;font-weight: 400;color: #2a2a2a;margin: 0px 0 12px 0; padding-left: 8px; ">(the country's leading daily newspaper)</p></h4>
             <ul class="toc-list" style="margin-bottom: 24px;">
               <li>
                 <a href="https://www.philstar.com/opinion/2024/02/17/2333964/only-remaining-possible-solution-palestine-problem" target="_blank" rel="noopener noreferrer" class="toc-link">
                   <span class="toc-number">📰</span>
-                  <span style="text-decoration: none; font-size: 0.75rem;">Part 1 - https://www.philstar.com/opinion/2024/02/17/2333964/only-remaining-possible-solution-palestine-problem</span>
+                  <span style="text-decoration: none; font-size: 0.75rem;">https://www.philstar.com/opinion/2024/02/17/2333964/only-remaining-possible-solution-palestine-problem</span>
                 </a>
               </li>
               <li>
                 <a href="https://www.philstar.com/opinion/2024/02/18/2334133/only-remaining-possible-solution-palestine-problem" target="_blank" rel="noopener noreferrer" class="toc-link">
                   <span class="toc-number">📰</span>
-                  <span style="text-decoration: none; font-size: 0.75rem;">Part 2 - https://www.philstar.com/opinion/2024/02/18/2334133/only-remaining-possible-solution-palestine-problem</span>
+                  <span style="text-decoration: none; font-size: 0.75rem;">https://www.philstar.com/opinion/2024/02/18/2334133/only-remaining-possible-solution-palestine-problem</span>
                 </a>
               </li>
             </ul>
@@ -265,6 +265,12 @@
               thumb.classList.remove('active');
             });
             thumbElement.classList.add('active');
+            
+            // Scroll to featured video on all viewports
+            document.querySelector('.featured-video').scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'start' 
+            });
           }
         </script>
 
