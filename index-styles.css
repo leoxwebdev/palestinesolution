@@ -124,6 +124,10 @@ body {
   padding-bottom: 15px;
 }
 
+.section-title--responsive {
+  font-size: clamp(1.4rem, 2.5vw + 1rem, 2.2rem);
+}
+
 .video-player-section {
   display: flex;
   flex-direction: column;
@@ -344,6 +348,38 @@ body {
   flex-shrink: 0;
 }
 
+.pdf-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+}
+
+/* Long URL styling in TOC links */
+.toc-url {
+  text-decoration: none;
+  font-size: 0.85rem;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  .toc-url {
+    font-size: 0.8rem;
+    line-height: 1.45;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-all;
+  }
+}
+
 .prose {
   max-width: 100%;
 }
@@ -513,6 +549,66 @@ body {
     width: 160px;
     height: 90px;
   }
+}
+
+/* Modal base styles (all viewports) */
+.content-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 2147480000;
+  overflow: hidden;
+}
+
+.content-modal.open {
+  display: block;
+}
+
+.content-modal-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f7f3e7 !important;
+  overflow: auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+html.content-modal-open,
+body.content-modal-open {
+  overflow: hidden;
+}
+
+.content-modal-close {
+  position: fixed !important;
+  top: 12px;
+  right: 12px;
+  background: none !important;
+  border: none !important;
+  width: 56px !important;
+  height: 56px !important;
+  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  z-index: 2147483640 !important;
+}
+
+.content-modal-close svg {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.content-modal-close svg path {
+  stroke: red !important;
+  stroke-width: 3;
 }
 
 /* Desktop fullscreen modal for content sections */
