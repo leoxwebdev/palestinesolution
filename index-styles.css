@@ -4,6 +4,9 @@
   Inspired by Plantation Bay comparison page design
 */
 
+/* Reading serif for long-form (newspaper-like) text */
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap");
+
 /* Custom font - AaMgScript */
 @font-face {
   font-family: "AaMgScript-Regular";
@@ -385,7 +388,10 @@ body {
 }
 
 .prose p {
-  font-family: "AaMgScript-Regular", "Georgia", serif !important;
+  font-family: "Newsreader", Georgia, Cambria, "Times New Roman", serif !important;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 1.2rem;
   line-height: 1.8;
   margin: 0 0 16px 0;
@@ -714,7 +720,10 @@ body.content-modal-open {
   }
 
   .content-modal-content p {
-    font-family: "AaMgScript-Regular", "Georgia", serif !important;
+    font-family: "Newsreader", Georgia, Cambria, "Times New Roman", serif !important;
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 1.3rem !important;
     line-height: 1.8;
     color: #2a2a2a !important;

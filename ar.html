@@ -10,8 +10,15 @@
       content="الكتابُ الأبيض: حلُّ الخروج المشترك من الأزمة الفلسطينيَّة بقلم: ج. مانويل غونزاليس"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./styles.css?v=5" />
-    <link rel="stylesheet" href="./ar-styles.css?v=1" />
+    <script>
+      (function() {
+        var v = Date.now();
+        var styles = ['./styles.css', './ar-styles.css'];
+        for (var i = 0; i < styles.length; i++) {
+          document.write('<link rel="stylesheet" href="' + styles[i] + '?v=' + v + '"/>' );
+        }
+      })();
+    </script>
   </head>
   <body>
     <div class="container">
@@ -43,30 +50,28 @@
           </h1>
           <div class="hero-content">
             <p class="lead-text">
-              <i>
-                بقلم: ج. مانويل غونزاليس. لا يُعتبر السيد/غونزاليس خبيراً في
-                شؤون الشرق الأوسط، لكنه يقدّم خبرات بديلة يفتقر إليها الخبراء
-                التقليديون: فهم اقتصاديات التنمية، التمويل الدولي، وإبرام
-                الصفقات الإبداعية. للاطّلاع على بياناته المهنية، راجع
-                <a
-                  href="https://www.plantationbay.com/Credentials.asp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  style="
-                    padding: 10px 18px;
-                    display: inline-flex;
-                    align-items: center;
-                    gap: 8px;
-                    width: auto;
-                    background: none;
-                    color: teal;
-                    text-decoration-line: underline;
-                  "
-                  ><span aria-hidden="true">👤</span
-                  ><span>السيرة المهنية للسيد غونزاليس</span></a
-                >.
-              </i>
+              بقلم: ج. مانويل غونزاليس. لا يُعتبر السيد/غونزاليس خبيراً في
+              شؤون الشرق الأوسط، لكنه يقدّم خبرات بديلة يفتقر إليها الخبراء
+              التقليديون: فهم اقتصاديات التنمية، التمويل الدولي، وإبرام
+              الصفقات الإبداعية. للاطّلاع على بياناته المهنية، راجع
+              <a
+                href="https://www.plantationbay.com/Credentials.asp"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+                style="
+                  padding: 10px 18px;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 8px;
+                  width: auto;
+                  background: none;
+                  color: teal;
+                  text-decoration-line: underline;
+                "
+                ><span aria-hidden="true">👤</span
+                ><span>السيرة المهنية للسيد غونزاليس</span></a
+              >.
             </p>
           </div>
         </section>

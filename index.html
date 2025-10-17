@@ -20,8 +20,15 @@
     />
     <meta property="og:site_name" content="PALESTINE" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./styles.css?v=5" />
-    <link rel="stylesheet" href="./index-styles.css?v=5" />
+    <script>
+      (function() {
+        var v = Date.now();
+        var styles = ['./styles.css', './index-styles.css'];
+        for (var i = 0; i < styles.length; i++) {
+          document.write('<link rel="stylesheet" href="' + styles[i] + '?v=' + v + '"/>' );
+        }
+      })();
+    </script>
   </head>
   <body>
     <div class="container">
@@ -61,37 +68,35 @@
           </h1>
           <div class="hero-content">
             <p class="lead-text">
-              <i
-                >By J. Manuel González. Mr. Gonzalez is not a Middle East Expert
-                but offers alternative kinds of expertise that past and present
-                Middle East experts apparently lack: an understanding of
-                development economics, international finance, and creative
-                business deal-making. For this essay he draws on a broad
-                multi-cultural background working on four continents, many years
-                of World Bank experience advising governments and corporations,
-                and an out-of-the-box entrepreneurial mindset. For more
-                information on him, see
-                <a
-                  href="https://www.plantationbay.com/Credentials.asp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  style="
-                    padding: 10px 18px;
-                    display: inline-flex;
-                    align-items: center;
-                    gap: 8px;
-                    width: auto;
-                    font-size: 0.95rem;
-                    background-color:transparent;
-                    background:none;
-                    color: teal;
-                    text-decoration-line: underline;
-                  "
-                  ><span aria-hidden="true">👤</span
-                  ><span>J. Manuel González's Credentials</span></a
-                >.</i
-              >
+              By J. Manuel González. Mr. Gonzalez is not a Middle East Expert
+              but offers alternative kinds of expertise that past and present
+              Middle East experts apparently lack: an understanding of
+              development economics, international finance, and creative
+              business deal-making. For this essay he draws on a broad
+              multi-cultural background working on four continents, many years
+              of World Bank experience advising governments and corporations,
+              and an out-of-the-box entrepreneurial mindset. For more
+              information on him, see
+              <a
+                href="https://www.plantationbay.com/Credentials.asp"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+                style="
+                  padding: 10px 18px;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 8px;
+                  width: auto;
+                  font-size: 0.95rem;
+                  background-color:transparent;
+                  background:none;
+                  color: teal;
+                  text-decoration-line: underline;
+                "
+                ><span aria-hidden="true">👤</span
+                ><span>J. Manuel González's Credentials</span></a
+              >.
             </p>
           </div>
         </section>
