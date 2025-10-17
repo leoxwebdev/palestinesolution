@@ -169,7 +169,7 @@
             <ul class="toc-list" style="margin-bottom: 24px">
               <li>
                 <a
-                  href="./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ARABIC.pdf"
+                  href="./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ARABIC.pdf?v=20251017"
                   target="_blank"
                   rel="noopener noreferrer"
                   onclick="return openPDF(event, 'arabic');"
@@ -189,7 +189,7 @@
               </li>
               <li>
                 <a
-                  href="./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ENGLISH.pdf"
+                  href="./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ENGLISH.pdf?v=20251017"
                   target="_blank"
                   rel="noopener noreferrer"
                   onclick="return openPDF(event, 'english');"
@@ -2313,6 +2313,7 @@
         </div>
 
         <script>
+          const PDF_VERSION = '20251017';
           function openPDF(e, language) {
             const isDesktopViewport = window.matchMedia && window.matchMedia('(min-width: 992px)').matches;
             if (isDesktopViewport) {
@@ -2372,9 +2373,10 @@
             const pdfIframe = document.getElementById("pdf-modal-iframe");
             const pdfTitle = document.getElementById("pdf-modal-title");
 
-            const pdfUrl = language === "english"
+            const pdfBase = language === "english"
               ? "./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ENGLISH.pdf"
               : "./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ARABIC.pdf";
+            const pdfUrl = `${pdfBase}?v=${PDF_VERSION}`;
 
             const desktop = typeof isDesktop === 'function' ? isDesktop() : window.matchMedia('(min-width: 992px)').matches;
             if (!desktop) {

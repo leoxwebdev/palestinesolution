@@ -139,7 +139,7 @@
             <h4 style="font-size: 1.15rem; font-weight: 400; color: #2a2a2a; margin: 40px 0 12px 0; padding-left: 8px; border-left: 3px solid rgba(210, 189, 134, 0.6);">PDF Version : The Non-Zero-Sum Solution to the Palestine Crisis. <p style="font-size: 0.8rem;font-style: italic;font-weight: 400;color: #2a2a2a;margin: 0px 0 12px 0; padding-left: 8px; ">(On mobile, the PDF opens in a new tab.)</p></h4>
             <ul class="toc-list" style="margin-bottom: 24px;">
               <li>
-                <a href="./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ENGLISH.pdf" target="_blank" rel="noopener noreferrer" onclick="return openPDF(event, 'english');" class="toc-link">
+                <a href="./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ENGLISH.pdf?v=20251017" target="_blank" rel="noopener noreferrer" onclick="return openPDF(event, 'english');" class="toc-link">
                   <span class="pdf-badge" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
                       <path fill="#E11D2E" d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6z"/>
@@ -153,7 +153,7 @@
                 </a>
               </li>
               <li>
-                <a href="./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ARABIC.pdf" target="_blank" rel="noopener noreferrer" onclick="return openPDF(event, 'arabic');" class="toc-link">
+                <a href="./Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ARABIC.pdf?v=20251017" target="_blank" rel="noopener noreferrer" onclick="return openPDF(event, 'arabic');" class="toc-link">
                   <span class="pdf-badge" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
                       <path fill="#E11D2E" d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6z"/>
@@ -378,13 +378,15 @@
 
         <script>
           function showPDF(language) {
+            const PDF_VERSION = '20251017';
             const modal = document.getElementById('pdfModal');
             const pdfIframe = document.getElementById('pdf-modal-iframe');
             const pdfTitle = document.getElementById('pdf-modal-title');
 
-            const pdfUrl = language === 'english'
+            const pdfBase = language === 'english'
               ? './Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ENGLISH.pdf'
               : './Non-Zero-Sum_Solution_to_the_Palestine_Crisis_ARABIC.pdf';
+            const pdfUrl = `${pdfBase}?v=${PDF_VERSION}`;
 
             // On mobile/tablet, navigate directly (better PDF support on iOS Safari)
             const desktop = typeof isDesktop === 'function' ? isDesktop() : window.matchMedia('(min-width: 992px)').matches;
