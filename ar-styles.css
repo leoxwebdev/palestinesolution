@@ -12,6 +12,29 @@
   font-display: swap;
 }
 
+/* Ensure AaMgScript text never renders italic (including preventing faux-italic) */
+[style*="AaMgScript-Regular"],
+[style*="AaMgScript-Regular"] *,
+.lead-text,
+.lead-text *,
+.section-title,
+.section-title *,
+.featured-video-title,
+.featured-video-title *,
+.thumb-title,
+.thumb-title *,
+.prose h2,
+.prose h2 *,
+.prose h3,
+.prose h3 *,
+.content-modal-content h2,
+.content-modal-content h2 *,
+.content-modal-content h3,
+.content-modal-content h3 * {
+  font-style: normal !important;
+  font-synthesis-style: none !important; /* prevents synthetic italic */
+}
+
 /* RTL-specific overrides */
 [dir="rtl"] .toc-link {
   flex-direction: row-reverse;

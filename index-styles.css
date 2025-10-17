@@ -16,6 +16,31 @@
   font-display: swap;
 }
 
+/* Ensure AaMgScript text never renders italic (including preventing faux-italic) */
+[style*="AaMgScript-Regular"],
+[style*="AaMgScript-Regular"] *,
+.lead-text,
+.lead-text *,
+.featured-video-title,
+.featured-video-title *,
+.thumb-title,
+.thumb-title *,
+.toc-link,
+.toc-link *,
+.prose h2,
+.prose h2 *,
+.prose h3,
+.prose h3 *,
+.content-modal-content h2,
+.content-modal-content h2 *,
+.content-modal-content h3,
+.content-modal-content h3 *,
+.section-title,
+.section-title * {
+  font-style: normal !important;
+  font-synthesis-style: none !important; /* prevents synthetic italic */
+}
+
 /* Override body background with warm parchment paper effect */
 body {
   background-color: #f7f3e7 !important;
